@@ -12,24 +12,47 @@ namespace WindowsFormsApplication2
 {
     public partial class Form1 : Form
     {
-        Double first, second, number, answer;
+        Double first=0, second=0, number=0, answer=0;
         int control;
-        string window;
+        string window; //문자열
         public Form1()
         {
             InitializeComponent();
         }
-       
 
-
-
-            //숫자입력
-        private void Click(object sender, EventArgs e)
+        private void FrmCalc_KeyDown(object sender, KeyEventArgs e)
         {
+            string numPad = string.Empty;
+            if (e.KeyCode >= Keys.NumPad0 && e.KeyCode <= Keys.NumPad9)
+            {
+                numPad = (((int)e.KeyCode) - 96).ToString();
 
+                if (first == 0)
+                    first = Convert.ToDouble(numPad);
+                else
+                    first = int.Parse(first.ToString() + numPad);
+                textBox1.Text = first.ToString();
+            }
+            else
+            {
+                if (e.KeyCode == Keys.Add)
+                    this.button11.PerformClick();
+                else if (e.KeyCode == Keys.Subtract)
+                    this.button12.PerformClick();
+                else if (e.KeyCode == Keys.Multiply)
+                    this.button13.PerformClick();
+                else if (e.KeyCode == Keys.Divide)
+                    this.button14.PerformClick();
+            }
+        }
+
+
+        //숫자입력
+        private void Btn_Click(object sender, EventArgs e)
+        {
             Button btn = (Button)sender;
-            textBox1.Text += btn.Text;
             window += btn.Text;
+            textBox1.Text += btn.Text;
         }
 
 
@@ -52,7 +75,7 @@ namespace WindowsFormsApplication2
         }
 
         //%
-        private void divpercent(object sender, EventArgs e)
+        private void Divpercent(object sender, EventArgs e)
         {
             number = Convert.ToDouble(window);
             textBox1.Clear();
@@ -60,52 +83,97 @@ namespace WindowsFormsApplication2
             window = textBox1.Text;
         }
 
-
-        // 사칙연산
-        private void plus(object sender, EventArgs e)
+        private void Calculate(object sender, EventArgs e)
         {
-            first = Convert.ToDouble(window);
-            textBox1.Clear();
-            window = textBox1.Text;
-            textBox1.Text = Convert.ToString(first);
-            textBox1.Text += "+";
+            Button btn = (Button)sender;
+            switch (btn.Text)
+            {
+                case "+":
+                    {
+                        if (window == "")
+                        { }
+                        else
+                        {
+                            first = first+ Convert.ToDouble(window);
+                        }
+                        window = "";
+                        textBox1.Text = Convert.ToString(first);
+                        textBox1.Text += "+";
 
-            control = 1;
+                        control = 1;
+                        break;
+                    }
+                case "-":
+                    {
+                        if (window == "")
+                        { }
+                        else
+                        {
+                            first = first - Convert.ToDouble(window);
+                        }
+                        window = "";
+                        textBox1.Text = Convert.ToString(first);
+                        textBox1.Text += "-";
+                        control = 2;
+
+                        break;
+                    }
+                case "÷":
+                    {
+                        if (window == "")
+                        { }
+                        else
+                        {
+                            first = Convert.ToDouble(window);
+                        }
+                        window = "";
+                        textBox1.Text = Convert.ToString(first);
+                        textBox1.Text += "÷";
+                        control = 3;
+
+                        break;
+                    }
+                case "×":
+                    {
+                        if (window == "")
+                        { }
+                        else
+                        {
+                            first = Convert.ToDouble(window);
+                        }
+                        window = "";
+                        textBox1.Text = Convert.ToString(first);
+                        textBox1.Text += "×";
+                        control = 4;
+
+                        break;
+                    }
+                case "=":
+                    {
+                        second = Convert.ToDouble(window);
+                        textBox1.Text += "=";
+
+
+                        switch (control)
+                        {
+                            case 1:
+                                answer = first + second; break;
+                            case 2:
+                                answer = first - second; break;
+                            case 3:
+                                answer = first / second; break;
+                            case 4:
+                                answer = first * second; break;
+                        }
+                        textBox1.Text += Convert.ToString(answer);
+                        first = answer;
+                        second = 0;
+                        control = 0;
+                        window = "";
+                        break;
+                    }
+            }
         }
-
-        private void minus(object sender, EventArgs e)
-        {
-
-            first = Convert.ToDouble(window);
-            textBox1.Clear();
-            window = textBox1.Text;
-            textBox1.Text = Convert.ToString(first);
-            textBox1.Text += "-";
-            control = 2;
-        }
-
-        private void multiple(object sender, EventArgs e)
-        {
-
-            first = Convert.ToDouble(window);
-            textBox1.Clear();
-            window = textBox1.Text;
-            textBox1.Text = Convert.ToString(first);
-            textBox1.Text += "*";
-            control = 3;
-        }
-
-        private void divide(object sender, EventArgs e)
-        {
-
-            first = Convert.ToDouble(window);
-            textBox1.Clear();
-            window = textBox1.Text;
-            textBox1.Text = Convert.ToString(first);
-            textBox1.Text += "/";
-            control = 4;
-        }
-
 
         // +&-
         private void PLUSMINUS(object sender, EventArgs e)
@@ -118,19 +186,25 @@ namespace WindowsFormsApplication2
         }
 
         // C
-        private void clearall(object sender, EventArgs e)
+        private void Clearall(object sender, EventArgs e)
         {
-            textBox1.Clear();
-            window = textBox1.Text;
             first = 0;
             second = 0;
             control = 0;
+            textBox1.Clear();
+            window = textBox1.Text;
+            
         }
+
+
+
         // =
-        private void result(object sender, EventArgs e)
+        private void Result(object sender, EventArgs e)
         {
             second = Convert.ToDouble(window);
             textBox1.Text += "=";
+
+            
             switch (control)
             {
                 case 1:
@@ -145,6 +219,7 @@ namespace WindowsFormsApplication2
             textBox1.Text += Convert.ToString(answer);
             window = Convert.ToString(answer);
             first = answer;
+            second = 0;
             control = 0;
         }
 
