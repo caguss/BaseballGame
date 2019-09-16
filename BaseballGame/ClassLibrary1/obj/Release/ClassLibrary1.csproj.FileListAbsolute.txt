@@ -1,0 +1,6 @@
+C:\Users\GD6\source\repos\BaseballGame\ClassLibrary1\bin\Release\ClassLibrary1.dll
+C:\Users\GD6\source\repos\BaseballGame\ClassLibrary1\bin\Release\ClassLibrary1.pdb
+C:\Users\GD6\source\repos\BaseballGame\ClassLibrary1\obj\Release\ClassLibrary1.csprojAssemblyReference.cache
+C:\Users\GD6\source\repos\BaseballGame\ClassLibrary1\obj\Release\ClassLibrary1.csproj.CoreCompileInputs.cache
+C:\Users\GD6\source\repos\BaseballGame\ClassLibrary1\obj\Release\ClassLibrary1.dll
+C:\Users\GD6\source\repos\BaseballGame\ClassLibrary1\obj\Release\ClassLibrary1.pdb

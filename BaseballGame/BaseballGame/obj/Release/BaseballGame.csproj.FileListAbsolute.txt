@@ -1,0 +1,10 @@
+C:\Users\GD6\source\repos\BaseballGame\BaseballGame\bin\Release\BaseballGame.pdb
+C:\Users\GD6\source\repos\BaseballGame\BaseballGame\obj\Release\BaseballGame.csproj.CoreCompileInputs.cache
+C:\Users\GD6\source\repos\BaseballGame\BaseballGame\obj\Release\BaseballGame.pdb
+C:\Users\GD6\source\repos\BaseballGame\BaseballGame\bin\Release\BaseballGame.exe.config
+C:\Users\GD6\source\repos\BaseballGame\BaseballGame\bin\Release\BaseballGame.exe
+C:\Users\GD6\source\repos\BaseballGame\BaseballGame\obj\Release\BaseballGame.exe
+C:\Users\GD6\source\repos\BaseballGame\BaseballGame\bin\Release\ClassLibrary1.dll
+C:\Users\GD6\source\repos\BaseballGame\BaseballGame\bin\Release\ClassLibrary1.pdb
+C:\Users\GD6\source\repos\BaseballGame\BaseballGame\obj\Release\BaseballGame.csprojAssemblyReference.cache
+C:\Users\GD6\source\repos\BaseballGame\BaseballGame\obj\Release\BaseballGame.csproj.CopyComplete

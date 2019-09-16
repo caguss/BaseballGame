@@ -1,0 +1,7 @@
+C:\Users\GD6\source\repos\BaseballGame\BaseballGame\bin\Debug\BaseballGame.pdb
+C:\Users\GD6\source\repos\BaseballGame\BaseballGame\obj\Debug\BaseballGame.csprojAssemblyReference.cache
+C:\Users\GD6\source\repos\BaseballGame\BaseballGame\obj\Debug\BaseballGame.csproj.CoreCompileInputs.cache
+C:\Users\GD6\source\repos\BaseballGame\BaseballGame\obj\Debug\BaseballGame.pdb
+C:\Users\GD6\source\repos\BaseballGame\BaseballGame\bin\Debug\BaseballGame.dll.config
+C:\Users\GD6\source\repos\BaseballGame\BaseballGame\bin\Debug\BaseballGame.dll
+C:\Users\GD6\source\repos\BaseballGame\BaseballGame\obj\Debug\BaseballGame.dll
