@@ -1,0 +1,10 @@
+C:\Users\GD6\source\repos\WindowsFormsApp1002\PickTheSameFruit\bin\Debug\PickTheSameFruit.exe.config
+C:\Users\GD6\source\repos\WindowsFormsApp1002\PickTheSameFruit\bin\Debug\PickTheSameFruit.exe
+C:\Users\GD6\source\repos\WindowsFormsApp1002\PickTheSameFruit\bin\Debug\PickTheSameFruit.pdb
+C:\Users\GD6\source\repos\WindowsFormsApp1002\PickTheSameFruit\obj\Debug\PickTheSameFruit.Form1.resources
+C:\Users\GD6\source\repos\WindowsFormsApp1002\PickTheSameFruit\obj\Debug\PickTheSameFruit.Properties.Resources.resources
+C:\Users\GD6\source\repos\WindowsFormsApp1002\PickTheSameFruit\obj\Debug\PickTheSameFruit.csproj.GenerateResource.cache
+C:\Users\GD6\source\repos\WindowsFormsApp1002\PickTheSameFruit\obj\Debug\PickTheSameFruit.csproj.CoreCompileInputs.cache
+C:\Users\GD6\source\repos\WindowsFormsApp1002\PickTheSameFruit\obj\Debug\PickTheSameFruit.exe
+C:\Users\GD6\source\repos\WindowsFormsApp1002\PickTheSameFruit\obj\Debug\PickTheSameFruit.pdb
+C:\Users\GD6\source\repos\WindowsFormsApp1002\PickTheSameFruit\obj\Debug\PickTheSameFruit.csprojAssemblyReference.cache
